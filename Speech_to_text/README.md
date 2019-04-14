@@ -1,4 +1,4 @@
-**Copy right &2019-present Kevin Nguyen, Danny Doan, Omar Garcia, Micheal Myers.**
+**Copy right (c)2019-present Kevin Nguyen, Danny Doan, Omar Garcia, Micheal Myers.**
 
 # Personnal AI
 
