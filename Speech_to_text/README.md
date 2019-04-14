@@ -1,4 +1,4 @@
-copy right @ 2019 Kevin Nguyen.
+**Copy right &2019-present Kevin Nguyen, Danny Doan, Omar Garcia, Micheal Myers.**
 
 # Personnal AI
 
