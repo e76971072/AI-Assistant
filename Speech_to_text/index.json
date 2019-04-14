@@ -1,6 +1,6 @@
 {
     "audio": {
-      "content": "/* Your audio */"
+      "content": "resources/"
     },
     "config": {
       "enableAutomaticPunctuation": true,
