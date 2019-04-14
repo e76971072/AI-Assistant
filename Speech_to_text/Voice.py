@@ -57,15 +57,11 @@ def call_recignition ():
 '''
         using Twiolio API to call
 '''
-def read_files_phoneNumbers (auto_text):
+def read_files_phoneNumbers (auto_text, line):
         found  = auto_text.split()
-        with open ("phoneList.text", "r") as infile:
-                line = infile.read().split()
-                for i in line:
-                        if i.lower() == found[1].lower():
-                                calling_client (line[i+1])
-                                        
-
+        for i in range(len(line)):
+                if line[i].lower() == found[1].lower():
+                        calling_client (line[i+1])
 def calling_client (phoneNumber):
         account_sid = 'AC4380ca008e9d36cfc7d279d81425e6f4'
         auth_token = '88b88e0041b54c2e35cf370800417082'
@@ -85,13 +81,14 @@ def send_messages():
         client = Client(account_sid, auth_token)
         client.messages.create(to="+15125658778", 
                        from_="+15127102536", 
-                       body="Du ma, Ti Anh")
-        print(client.messages.sid)
+                       body="Whatever you want to say")
 def checking_command (audio_text, line):
+        print (audio_text)
+        value = audio_text.split()
         if audio_text.lower() == 'messsage'.lower():
                 send_messages()
-        if audio_text.lower() == 'call'.lower():
-                calling_client()
+        if value[0].lower() == 'call'.lower():
+                read_files_phoneNumbers(audio_text,line)
         if audio_text.lower() == 'send help'.lower():
                 emergency_help()
         if audio_text.lower() == 'facebook'.lower():
@@ -115,5 +112,4 @@ def facebook_posting ():
         print (post)
         #to put comments for particular post id
         graph.put_object(post["id"], "comments", message="First!")
-
 main()
