@@ -1,6 +1,6 @@
 **Copy right (c)2019-present Kevin Nguyen, Danny Doan, Omar Garcia, Micheal Myers.**
 
-# Personnal AI
+# AI Assistant
 
 Personnal AI is a project to create ease of use for all. Some functionalities, include transcribing audio to text, personnal assistance for call and message. The basis of this project is based on the Google Cloud Platform AI with Twilio API and Facebook GraphAPI, so the possibilities are endless.
 
