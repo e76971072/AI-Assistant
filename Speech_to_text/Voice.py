@@ -53,7 +53,7 @@ def read_files_phoneNumbers (auto_text, line):
                         calling_client (line[i+1])
 def calling_client (phoneNumber):
         account_sid = 'My sid'
-        auth_token = 'my access token'
+        auth_token = 'My access token'
         client = Client(account_sid, auth_token)
         call = client.calls.create(
                         url='http://demo.twilio.com/docs/voice.xml',
@@ -66,9 +66,9 @@ def calling_client (phoneNumber):
 '''
 def send_messages():
         account_sid = 'My sid'
-        auth_token = 'my access token'
+        auth_token = 'access'
         client = Client(account_sid, auth_token)
-        client.messages.create(to="+15125658778", 
+        client.messages.create(to="+15125658779", 
                        from_="+15127102536", 
                        body="Whatever you want to say")
 def checking_command (audio_text, line):
@@ -83,16 +83,16 @@ def checking_command (audio_text, line):
         if audio_text.lower() == 'facebook'.lower():
                 facebook_posting()
 def emergency_help ():
-        account_sid = 'AC4380ca008e9d36cfc7d279d81425e6f4'
-        auth_token = '88b88e0041b54c2e35cf370800417082'
+        account_sid = 'My sid'
+        auth_token = 'My access Token '
         client = Client(account_sid, auth_token)
         call = client.calls.create(
                         url='http://demo.twilio.com/docs/voice.xml',
-                        to='+15125658778',
+                        to='+15125658779',
                         from_='+15127102536'
                     )
 def facebook_posting ():
-        access_token='EAAhtKNxSilUBAEUSkLdYBHzZCAMF2ApewTc6mggdWBoOWg4ZCquQfAz5nP17jswnxcFWtCqooR3KInYLErbZC4ulgEsZCOVqRyYI6iFzPjdKHriX5tM2VXfLrMa0eNWbv7l0WB9eLs43Ur2UgKk3BPJCL46IUbkl4XOIcUBAGY4vY1iu6fOjn8OcTr8pe9j6tNFBydDpGAZDZD'
+        access_token='Facebook Access Token Contents'
         graph = facebook.GraphAPI(access_token)
         graph.put_object("me", "feed", message="Posting on my wall1!")
         #to get your posts/feed
