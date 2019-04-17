@@ -6,4 +6,4 @@ Personnal AI is a project to create ease of use for all. Some functionalities, i
 
 ### Libraries: Google CLoud speech ,Twilio, Facebook GraphAPI, Python3 SpeechRecognition
 
-![alt text](https://github.com/e76971072/AI-Assistant/image/Example)
+![alt text](https://github.com/e76971072/AI-Assistant/blob/master/image/Example.png)
